@@ -1,0 +1,18 @@
+.k-short-c-o.design-one {
+  padding: 30px 0px; }
+
+.k-short-c-o-header {
+  text-align: center;
+  padding: 30px 0px; }
+  .k-short-c-o-header .k-short-c-o-header-icon {
+    margin-bottom: 10px; }
+    .k-short-c-o-header .k-short-c-o-header-icon svg {
+      color: #70879A;
+      width: 1em;
+      height: 1em;
+      font-size: 40px; }
+  .k-short-c-o-header .k-short-c-o-header-title {
+    margin-bottom: 5px;
+    font-size: 28px;
+    line-height: 45px;
+    color: #70879A; }

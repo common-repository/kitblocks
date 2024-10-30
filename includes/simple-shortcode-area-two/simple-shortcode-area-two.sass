@@ -1,0 +1,115 @@
+\:root
+    --title-font: 'Poppins', sans-serif
+    --content-font: 'Poppins', sans-serif
+    --recyclekitcolorwhite: #ffffff
+    --recyclekitcolorblack: #000000
+    --recyclekitcolorone: #ff441f
+
+
+
+
+    --color-white: #ffffff
+    --color-dark: #362F2F
+    --color-dark-two: #2f333c
+    --color-dark-three: #9c9c9c
+    --color-high-dark: #3a5063
+    --color-light: #666666
+    --color-light-two: #ffd8b9
+    --color-light-three: #fffcf9
+    --color-light-four: #b99c74
+    --color-light-five: #f7f4ee
+    --color-light-six: #F3F0EE
+    --color-light-seven: #D6B992
+    --color-light-eight: #f1e8e2
+    --color-light-nine:  #70879a
+    --color-light-ten:  #fa4f08
+    --color-light-ele:  #e6e7e8
+    --color-shado-color: #fe730108
+    --color-shado-color-two: #eaedf0
+    --color-light-green-one: #28cc41
+
+    
+$titleFont: var(--title-font)
+$contentFont: var(--content-font)
+$recyclekitcolorwhite: var(--recyclekitcolorwhite)
+$recyclekitcolorblack: var(--recyclekitcolorblack)
+$recyclekitcolorone: var(--recyclekitcolorone)
+
+.k-short-c-o.design-two
+    background: #000000
+    padding: 60px 0
+    .k-short-c-o-header
+        margin-bottom: 20px
+        .k-short-c-o-header-title
+            color: $recyclekitcolorone
+            font-size: 23px
+            line-height: 33px
+            font-weight: 700
+            text-transform: capitalize
+        .k-short-c-o-header-title-sub
+            color: $recyclekitcolorwhite
+            font-size: 33px
+            line-height: 39px
+            font-weight: 700
+            text-transform: capitalize
+    .contact-form-one
+        max-width: 500px
+        .form-group
+            margin-bottom: 20px
+            position: relative
+            input:not(input[type="submit"]),
+            textarea
+                border: 1px solid $recyclekitcolorone
+                background: transparent
+                padding: 10px 20px
+                border-radius: 10px
+                width: 100%
+                color: $recyclekitcolorone
+                &::placeholder 
+                    color: $recyclekitcolorone
+            textarea
+                height: 200px
+        .submite-btn-area
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            input[type="submit"]
+                padding: 16px 22px
+                font-size: 20px
+                font-weight: 600
+                line-height: 24px
+                color: $recyclekitcolorblack
+                text-decoration: none
+                margin-right: 10px
+                border: 1px solid $recyclekitcolorone
+                border-radius: 10px
+                text-transform: capitalize
+                text-align: center
+                background: $recyclekitcolorone
+                max-width: 180px
+                width: 100%
+            a
+                padding: 16px 22px
+                font-size: 20px
+                font-weight: 600
+                line-height: 24px
+                color: $recyclekitcolorone
+                text-decoration: none
+                margin-right: 10px
+                border: 1px solid $recyclekitcolorone
+                border-radius: 10px
+                text-transform: capitalize
+                background: transparent
+                max-width: 180px
+                width: 100%
+                text-align: center
+
+@media only screen and (min-width: 300px) and (max-width: 767.98px)
+    .k-short-c-o.design-two
+        padding: 20px 0
+        .k-short-c-o-header
+            .k-short-c-o-header-title-sub
+                font-size: 27px
+                br
+                    display: none
+                    

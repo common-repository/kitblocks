@@ -1,0 +1,110 @@
+\:root
+    --title-font: 'Poppins', sans-serif
+    --content-font: 'Poppins', sans-serif
+    --recyclekitcolorwhite: #ffffff
+    --recyclekitcolorblack: #000000
+    --recyclekitcolorone: #ff441f
+
+
+
+
+    --color-white: #ffffff
+    --color-dark: #362F2F
+    --color-dark-two: #2f333c
+    --color-dark-three: #9c9c9c
+    --color-high-dark: #3a5063
+    --color-light: #666666
+    --color-light-two: #ffd8b9
+    --color-light-three: #fffcf9
+    --color-light-four: #b99c74
+    --color-light-five: #f7f4ee
+    --color-light-six: #F3F0EE
+    --color-light-seven: #D6B992
+    --color-light-eight: #f1e8e2
+    --color-light-nine:  #70879a
+    --color-light-ten:  #fa4f08
+    --color-light-ele:  #e6e7e8
+    --color-shado-color: #fe730108
+    --color-shado-color-two: #eaedf0
+    --color-light-green-one: #28cc41
+
+    
+$titleFont: var(--title-font)
+$contentFont: var(--content-font)
+$recyclekitcolorwhite: var(--recyclekitcolorwhite)
+$recyclekitcolorblack: var(--recyclekitcolorblack)
+$recyclekitcolorone: var(--recyclekitcolorone)
+
+.k-s-s-o.design-two
+    padding: 80px 0px
+    background: $recyclekitcolorblack
+    .kitblocks-item-slider-one
+        .owl-nav
+            position: absolute
+            bottom: 60%
+            left: 0
+            right: 0
+            margin: 0 auto
+            width: 100%
+            button
+                width: 50px
+                height: 50px
+                border-radius: 50%
+                background-size: contain !important
+                background-repeat: no-repeat !important
+                background-position: center !important
+                span
+                    display: none
+            button.owl-prev
+                position: absolute
+                background: url(../../assets/images/slider-arow-left.svg)
+                left: -80px
+                top: 0
+            button.owl-next
+                position: absolute
+                background: url(../../assets/images/slider-arow-right.svg)
+                right: -80px
+                top: 0
+                left: auto
+        .k-s-s-o-item
+            border: 5px solid $recyclekitcolorone
+            text-align: center
+            width: 100%
+            border-radius: 10px
+            margin-bottom: 15px
+            a
+                display: grid
+                .k-s-s-o-item-header
+                    background: $recyclekitcolorone
+                    padding: 20px 0
+                    p
+                        margin: 0
+                        padding: 0
+                        font-size: 21px
+                        font-weight: 700
+                        color: $recyclekitcolorblack
+                .k-s-s-o-item-img
+                    img
+                        width: 100%
+                        border: 10px solid $recyclekitcolorblack
+                        border-radius: 10px
+                    .k-s-s-o-item-img-overlay
+.block-editor-page
+    .k-h-area
+        padding: 60px 0 !important
+    .k-s-s-o.design-two
+        .kitblocks-item-slider-one
+            display: block
+            .k-s-s-o-item
+                display: inline-block
+                max-width: 33%
+@media only screen and (min-width: 300px) and (max-width: 991.98px)
+    .k-s-s-o.design-two
+        padding: 20px 0px
+        .kitblocks-item-slider-on
+            .k-s-s-o-item
+                a
+                    .k-s-s-o-item-img
+                        img
+                            height: auto
+                            width: 100%

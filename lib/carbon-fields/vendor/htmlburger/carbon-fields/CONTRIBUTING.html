@@ -1,0 +1,53 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>CONTRIBUTING.md</title>
+      </head>
+      <body>
+        <h1 id="development-environment">Development environment</h1>
+<p>This setup is only meant for development use - for production follow <a href="https://carbonfields.net/docs/carbon-fields-quickstart/?crb_version=2-1-0">Quickstart</a> instead.</p>
+<ol>
+<li>Setup a blank WordPress installation</li>
+<li>Add a new <code>carbon-fields</code> directory inside your theme of choice and switch to it<ol>
+<li>Fork this repository and clone your fork</li>
+<li>Run <code>git checkout development</code></li>
+<li>Run <code>composer install</code></li>
+<li>Run <code>npm install</code> or <code>yarn install</code></li>
+<li>Run <code>npm run build</code> or <code>yarn run build</code></li>
+</ol>
+</li>
+<li><p>Add the following code to the top of your functions.php file:</p>
+<pre><code class="lang-php"> use Carbon_Fields\Container;
+ use Carbon_Fields\Field;
+
+ add_action( &#39;carbon_fields_register_fields&#39;, &#39;crb_attach_theme_options&#39; );
+ function crb_attach_theme_options() {
+     Container::make( &#39;theme_options&#39;, __( &#39;Theme Options&#39;, &#39;crb&#39; ) )
+         -&gt;add_fields( array(
+             Field::make( &#39;text&#39;, &#39;crb_text&#39;, &#39;Text Field&#39; ),
+         ) );
+ }
+
+ add_action( &#39;after_setup_theme&#39;, &#39;crb_load&#39; );
+ function crb_load() {
+     require_once( &#39;carbon-fields/vendor/autoload.php&#39; );
+     \Carbon_Fields\Carbon_Fields::boot();
+ }
+</code></pre>
+</li>
+</ol>
+<h1 id="preparation">Preparation</h1>
+<ol>
+<li>Make sure your local branches are up to date</li>
+<li>Always start your contribution branches from the <code>development</code> branch</li>
+<li>If you are making JavaScript contributions, run <code>npm run start</code> or <code>yarn start</code> to run the dev build task (tracks file changes)</li>
+</ol>
+<h2 id="pull-request-process">Pull Request Process</h2>
+<ol>
+<li>Target the <code>development</code> branch for pull requests</li>
+<li>Include a detailed description of your contribution</li>
+<li>Make sure you follow the current codestyle</li>
+</ol>
+
+      </body>
+    </html>

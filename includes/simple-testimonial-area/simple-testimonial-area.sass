@@ -1,0 +1,123 @@
+\:root
+    --title-font: 'Poppins', sans-serif
+    --content-font: 'Poppins', sans-serif
+    --recyclekitcolorwhite: #ffffff
+    --recyclekitcolorblack: #000000
+    --recyclekitcolorone: #ff441f
+
+
+
+
+    --color-white: #ffffff
+    --color-dark: #362F2F
+    --color-dark-two: #2f333c
+    --color-dark-three: #9c9c9c
+    --color-high-dark: #3a5063
+    --color-light: #666666
+    --color-light-two: #ffd8b9
+    --color-light-three: #fffcf9
+    --color-light-four: #b99c74
+    --color-light-five: #f7f4ee
+    --color-light-six: #F3F0EE
+    --color-light-seven: #D6B992
+    --color-light-eight: #f1e8e2
+    --color-light-nine:  #70879a
+    --color-light-ten:  #fa4f08
+    --color-light-ele:  #e6e7e8
+    --color-shado-color: #fe730108
+    --color-shado-color-two: #eaedf0
+    --color-light-green-one: #28cc41
+
+    
+$titleFont: var(--title-font)
+$contentFont: var(--content-font)
+$recyclekitcolorwhite: var(--recyclekitcolorwhite)
+$recyclekitcolorblack: var(--recyclekitcolorblack)
+$recyclekitcolorone: var(--recyclekitcolorone)
+
+.k-testimonial-c-o.design-two
+    background: #000
+    padding: 100px 0
+    .row
+        align-items: center
+    .k-testimonial-c-o-video
+        height: 400px
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        z-index: 3
+        border-radius: 30px
+        &::before
+            content: ""
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            left: 0
+            top: 0
+            background: #0000008c
+        a
+            svg
+                z-index: 1
+                position: relative
+                width: 100px
+                height: 100px
+                border-radius: 50%
+                border: 5px solid $recyclekitcolorone
+                color: $recyclekitcolorone
+                padding: 9px
+    .k-testimonial-c-o-header-area
+        height: 100%
+        align-items: center
+        display: flex
+        justify-content: flex-start
+        .k-testimonial-c-o-bottom
+            background: $recyclekitcolorone
+            border-radius: 20px
+            padding: 60px 20px
+            width: 100%
+            position: relative
+            &::before
+                content: ""
+                display: block
+                width: 60px
+                height: 100%
+                position: absolute
+                left: -40px
+                top: 0
+                background:  $recyclekitcolorone
+            .k-testimonial-c-o-bottom-top
+                margin-bottom: 30px
+                h3
+                    text-transform: capitalize
+                    color: $recyclekitcolorblack
+            .k-testimonial-c-o-bottom-bottom
+                a
+                    padding: 16px 22px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: $recyclekitcolorblack
+                    text-decoration: none;
+                    margin-right: 10px;
+                    border: 1px solid $recyclekitcolorblack
+                    border-radius: 10px;
+                    text-transform: capitalize;
+                    min-width: 180px;
+                    text-align: center;
+@media only screen and (min-width: 300px) and (max-width: 767.98px)
+    .k-testimonial-c-o.design-two
+        padding: 50px 0
+        .k-testimonial-c-o-header-area
+            margin-top: 20px
+            .k-testimonial-c-o-bottom
+                padding: 30px
+                &::before
+                    display: none
+                .k-testimonial-c-o-bottom-top
+                    h3
+                        font-size: 25px
